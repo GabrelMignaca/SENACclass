@@ -1,0 +1,246 @@
+    /* Importa a fonte Roboto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {margin: 0;
+padding: 0;}
+
+body {
+    background-color: #ba7128;
+    font-family: 'Roboto';/* Usa Roboto como fonte principal */
+}
+
+header{
+    background-color: #4c5c90;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-right: 32px;
+}
+
+nav{
+    display: flex;
+    gap: 64px;
+}
+
+/*
+Estilização dos botões do menu de navegação
+DICAS:
+- border-radius deixa as bordas arredondadas
+- transition deixa o efeito suave ao passar o mouse
+- :hover muda a cor ao passar o mouse, deixando mais interativo
+*/
+header nav a {
+    width: 196px;
+    background-color: #e4e4e4;
+    padding: 12px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: 'Roboto', /* Fonte Roboto */
+    font-size: 20px;
+    font-style: normal;
+    border-radius: 12px; /* Bordas arredondadas */
+    border: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s; /* Efeito suave */
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+header nav a:hover {
+    background-color: #24ca5c; /* Cor ao passar o mouse */
+    color: #24ca5c;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+}
+
+
+main section{
+    margin-top: 16px;
+    
+
+}
+
+main .video iframe{
+        width: 1140px;
+    height: 307px;
+        margin-top: 16px;
+}
+main {
+ display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Centraliza e limita a largura do texto da descrição */
+.Descricao {
+    display: flex;
+    max-width: 700px; /* Limita a largura máxima do bloco de texto */
+    margin: 24px auto; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto dentro do bloco */
+    padding: 16px 16px; 
+    flex-direction: column;/* Espaço interno para não grudar nas bordas em telas pequenas */
+    background-color: #4c5c90;
+    margin-bottom: 100px;
+    border-radius: 15px; /* Bordas arredondadas */
+}
+main .Descricao h1{
+    font-size: 32px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+
+/*
+DICAS:
+- Use .servicos-grid para criar um grid responsivo para os cards de serviço.
+- .servico-card estiliza cada card individualmente.
+- .servico-img deixa a imagem redonda e centralizada.
+*/
+
+.servicos-grid {
+    display: grid; /* Cria um grid para os serviços */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivo */
+    gap: 40px; /* Espaço entre os cards */
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
+.servico-card {
+    background: #e9e9e9db; /* Cor de fundo do card */
+    border-radius: 8px;
+    padding: 32px 16px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    color: #000000;
+    border:  4px solid #000000; /* Borda preta */
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.servico-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%; /* Deixa a imagem redonda */
+    margin-bottom: 24px;
+    border: 4px solid #000000;
+}
+
+.servico-card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    font-weight: bold;
+
+}
+
+.servico-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* CONTATO */
+.contato-section {
+    display: flex;
+    flex-direction: row; /* Coloca formulário e info lado a lado */
+    gap: 40px; /* Espaço entre formulário e info */
+    justify-content: center;
+    align-items: flex-start;
+    margin: 32px 0;
+}
+
+.form-contato {
+    background: #d1d19f;
+    border-radius: 12px;
+    padding: 32px 24px;
+    min-width: 50%;
+    max-width: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 0px; /* Espaço entre os campos do formulário */
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.info-contato {
+    background-color: #4c5c90;
+    border-radius: 12px;
+    padding: 32px 24px;
+    min-width: 400px;
+    max-width: 400px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    text-align: center;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.info-contato figure {
+    margin: 0 0 16px 0;
+}
+
+.info-contato address {
+    font-style: normal; /* Corrige para não sobrescrever a fonte Roboto */
+    margin-bottom: 16px;
+    font-size: 1.05em;
+}
+
+.info-contato ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-contato li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 1.05em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%; /* Largura do formulário */
+    text-align: justify;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+
+form input[type="text"], form input[type="email"], form input[type="tel"], form textarea, form select {
+    width: 80%; /* Largura total do campo */
+    padding: 8px; /* Espaço interno */
+    margin-bottom: 16px; /* Espaço entre os campos */
+    border-radius: 4px; /* Bordas arredondadas */
+    border: 1px solid #ccc; /* Borda cinza clara */
+}
+
+form label{
+    margin-top: 10px;
+}
+
+form button{
+width: 80%;
+    padding: 12px;
+    background-color: #4c5c90; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+form figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+}
+
+footer {
+text-align: center;
+background-color: #4c5c90;
+padding: 10px;  
+}
+

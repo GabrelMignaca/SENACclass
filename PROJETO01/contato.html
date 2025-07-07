@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia do Irmao</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="img/BarbersBrothers-logo(2).png" alt="Logo da Barbearia do Irmão"
+                style="width: 150px; height: auto;">
+        </a>
+        <nav>
+            <!-- target para abri o link em nova guia -->
+            <a href="index.html" target="_blank">Home</a>
+            <!-- Link corrigido para a página de serviços -->
+            <a href="servico.html">Serviços</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <main> <h1>CONTATO</h1>
+        <section class="contato-section">
+            <form class="form-contato">
+                <label for="nome">NOME</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="telefone">TELEFONE</label>
+                <input type="tel" id="telefone" name="telefone">
+               
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" required>
+              
+                <label for="mensagem">MENSAGEM</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+              
+                    <legend>COMO PREFERE O NOSSO CONTATO</legend>
+                    <label><input type="radio" name="preferencia" value="email"> EMAIL</label>
+                    <label><input type="radio" name="preferencia" value="telefone"> TELEFONE</label>
+                    <label><input type="radio" name="preferencia" value="whatsapp"> WHATSAPP</label>
+                
+                <label for="txthorario">Qual horario prefere ser atendido?</label>
+                <select name="txthorario" id="txthorario">
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select>
+                <button type="submit">Enviar</button>
+            </form>
+        
+        <aside class="info-contato">
+            <figure>
+                <iframe src="https://www.google.com/maps?q=Barbearia+Do+Irmão,+Rua+Iguaçu+1608,+Porecatu,+PR&output=embed"
+                    width="400" height="300" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"></iframe>
+               
+                    <figcaption>Localização da Barbearia</figcaption>
+            </figure>
+            <address>
+                RUA IGUAÇU Nº 1608<br>
+                BAIRRO CENTRO<br>
+                CIDADE PORECATU - PR
+            </address>
+            <ul>
+                <li><b><img src="img/instagram.png" alt="Instagram" width="18"></b> barbeariadoirmao</li>
+                <li><b><img src="img/email.png" alt="Email" width="18"></b> wesleyirmao@barbeiro.com</li>
+                <li><b><img src="img/whatsapp.png" alt="Whatsapp" width="18"></b> (43)99652-3919</li>
+            </ul>
+        </aside>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Barbearia do Irmão. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
